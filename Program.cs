@@ -28,9 +28,12 @@ int.TryParse(numero1, out num1);
 string numero2=Console.ReadLine();
 int.TryParse(numero2, out num2); 
 
+
+
 switch (opcion)
 {
     case "1":
+
     Console.WriteLine($"La suma es {num1+num2}");
     break;
 
