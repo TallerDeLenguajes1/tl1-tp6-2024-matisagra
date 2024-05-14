@@ -27,6 +27,6 @@ if (resultado){
         aux = aux + dig;
         num=num/10;
     }
-    Console.WriteLine($"El numero invertido es: {aux}");
+    Console.WriteLine($"El numero invertido es:  {aux}");
 }
 
