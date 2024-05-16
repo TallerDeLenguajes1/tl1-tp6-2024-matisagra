@@ -23,6 +23,7 @@ if (resultado){
         aux = aux + dig;
         num=num/10;
     }
+}
     Console.WriteLine($"El numero invertido es:  {aux}");
 
 
@@ -92,6 +93,7 @@ if (resultado){
 //CalculadoraV2
 string numero;
 Console.WriteLine("Ingrese un numero: ");
+
 numero = Console.ReadLine();
 int.TryParse(numero, out num); 
 
