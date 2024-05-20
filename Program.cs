@@ -48,4 +48,48 @@ string subcadena = cadena1.Substring(2, longitud-2);
 
 Console.WriteLine($"La subcadena del primer texto ingresado es {subcadena}");
 
+foreach (char c in cadena1)
+{
+            Console.WriteLine(c);
+}
 
+
+Console.WriteLine("Ingrese la palabra a buscar en el texto:");
+string palabra = Console.ReadLine();
+
+        // Buscar la ocurrencia de la palabra en la cadena ingresada
+bool contienePalabra = cadena1.Contains(palabra);
+
+        // Mostrar el resultado
+if (contienePalabra)
+{
+     Console.WriteLine($"La cadena contiene la palabra '{palabra}'.");
+}
+else
+{
+    Console.WriteLine($"La cadena no contiene la palabra '{palabra}'.");
+}
+
+string mayusculas = cadena1.ToUpper();
+Console.WriteLine($"La cadena en mayúsculas es: {mayusculas}");
+
+        
+string minusculas = cadena1.ToLower();
+Console.WriteLine($"La cadena en minúsculas es: {minusculas}");
+
+
+Console.WriteLine("Por favor, ingrese una cadena de texto con separadores:");
+string cadena11 = Console.ReadLine(); // Ejemplo de entrada: "manzana,banana,naranja,pera"
+
+        
+Console.WriteLine("Ingrese el carácter separador:");
+char separador = Console.ReadLine()[0]; // Ejemplo de entrada: ','
+
+string[] partes = cadena11.Split(separador);
+
+        // Mostrar las partes resultantes por pantalla
+Console.WriteLine("Las partes de la cadena son:");
+foreach (string parte in partes)
+{
+    Console.WriteLine(parte);
+}
