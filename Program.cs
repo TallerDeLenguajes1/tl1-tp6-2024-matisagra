@@ -30,3 +30,22 @@ if (resultado){
     Console.WriteLine($"El numero invertido es:  {aux}");
 }
 
+//Ejercicio 4
+
+Console.WriteLine("Ingrese un texto: ");
+
+string cadena1 = Console.ReadLine();
+int longitud = cadena1.Length;
+Console.WriteLine($"La longitud del texto es {longitud}");
+
+Console.WriteLine("Ingrese otro texto: ");
+string cadena2 = Console.ReadLine();
+
+string cadenas = cadena1 + cadena2;
+Console.WriteLine($"La cadena concatenada es {cadenas}");
+
+string subcadena = cadena1.Substring(2, longitud-2);
+
+Console.WriteLine($"La subcadena del primer texto ingresado es {subcadena}");
+
+
